@@ -13,16 +13,31 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- ...........  Styles Sheet .............. -->
     <style>
+        .my-link-style:hover {
+            text-decoration: underline;
 
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container ">
         <!-- .......... header start .......... -->
-        <header class="bg-primary text-white py-3 text-center mt-1">
-            <h1>Study With <abbr title="Green University of Bangladesh">GUB</abbr></h1>
+        <header class="bg-primary">
+            <div class="row">
+                <div class="col-lg-5 m-auto">
+                    <h1 class="text-white text-center mb-0 py-3">Study with learn GUB</h1>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="nav justify-content-center py-3">
+                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">Tutorial</a></li>
+                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">About us</a></li>
+                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <!-- .......... header start ......... -->
 
@@ -83,13 +98,15 @@
                             Quia, explicabo atque voluptatem dolore corrupti eveniet esse. Eum quod recusandae ea fugiat
                             nesciunt, error illum laboriosam earum amet, optio laudantium, perferendis fugit nulla nisi
                             eos maiores? Aperiam unde asperiores mollitia sed sapiente saepe porro accusantium impedit
-                            veritatis assumenda, ea inventore repellendus magnam dignissimos doloremque ducimus itaque
-                            iste natus minus quia vitae? Commodi vel saepe minus voluptate nulla, necessitatibus illum,
-                            alias veritatis, libero quis ex sunt culpa aliquid? Debitis voluptatibus explicabo ea ut
-                            repudiandae officiis odit qui cupiditate consequatur at mollitia ad, reiciendis nam vel
-                            blanditiis consectetur doloribus sequi delectus praesentium fuga reprehenderit culpa
-                            necessitatibus velit illum. Excepturi ab iste error quidem molestias adipisci quasi
-                            consequatur ad quod.
+                            veritatis assumenda.
+
+                            <a href="#demo" data-bs-toggle="collapse">Learn more</a>
+
+                        <div id="demo" class="collapse">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla nihil a minus quam
+                                ut.</p>
+                        </div>
+
                         </p>
 
                         <div class="btn-group">
@@ -174,6 +191,16 @@
             <!-- student list section ends -->
         </main>
         <!-- ... main ends .... -->
+        <footer class="bg-danger p-3 justify-content-center">
+            <ul class="pagination">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+        </footer>
 
     </div>
 
