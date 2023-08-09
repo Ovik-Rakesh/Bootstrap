@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Project</title>
     <!-- ............. font-awesome cdn ......... -->
     <script src="https://kit.fontawesome.com/2a38a05e1c.js" crossorigin="anonymous"></script>
-    <!-- .......... Bootstrap link .............
+    <!-- .......... Bootstrap link ............. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  ...............-->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
     <!-- ...........  Styles Sheet .............. -->
     <style>
         .my-link-style:hover {
             text-decoration: underline;
+
+        }
+
+        img {
+            width: 50px;
 
         }
     </style>
@@ -22,197 +27,300 @@
 
 <body>
 
-    <div class="container ">
-        <!-- .......... header start .......... -->
-        <header class="bg-primary">
+
+    <!-- .......... header start ......... -->
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span> <i class="fas fa-bars navbar-icon"></i> </span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-center text-md-left" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center text-md-left" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center text-md-left" href="#tutorial">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center text-md-left" href="#feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center text-md-left" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ... main start .... -->
+    <main>
+        <div class="service-section bg-light mt-4">
+            <div class="title text-center mb-3">
+                <h3 class="fw-bolder">Services
+
+                </h3>
+            </div>
+            <div class="row text-start text-md-center">
+                <div class="col-lg-3 col-md-6">
+                    <i class=" bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
+                    <h5 class="text-uppercase">Web Desinging</h5>
+                    <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
+                        numquam?
+                        Consequatur cum
+                        beatae officia eius vel, labore saepe quos!</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
+                    <h5 class="text-uppercase">Graphices Desinging</h5>
+                    <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
+                        numquam? Consequatur cum
+                        beatae officia eius vel, labore saepe quos!</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
+                    <h5 class="text-uppercase"> Digital Marketing</h5>
+                    <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
+                        numquam?
+                        Consequatur cum
+                        beatae officia eius vel, labore saepe quos!</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
+                    <h5 class="text-uppercase"> Expert of Seo</h5>
+                    <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
+                        numquam?
+                        Consequatur cum
+                        beatae officia eius vel, labore saepe quos!</p>
+                </div>
+            </div>
+        </div>
+        <!-- ...About me start............ -->
+        <section class="mt-3">
+            <div>
+                <h1 class=" title text-center fw-bolder mb-3">About Me</h1>
+            </div>
             <div class="row">
-                <div class="col-lg-5 m-auto">
-                    <h1 class="text-white text-center mb-0 py-3">Study with learn GUB</h1>
+                <div class="col-lg-4">
+                    <img class="rounded-circle img-fluid img-thumbnail m-auto" src="image/Rakesh1.jpg" alt="My Profile"
+                        style="width: 250px;">
                 </div>
-                <div class="col-lg-7">
-                    <ul class="nav justify-content-center py-3">
-                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">Home</a></li>
-                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">Tutorial</a></li>
-                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">About us</a></li>
-                        <li class="nav-item"><a href="#" class="my-link-style  nav-link text-white">Contact me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <!-- .......... header start ......... -->
+                <div class="col-lg-8">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima voluptatem esse deserunt!
+                        Quia, explicabo atque voluptatem dolore corrupti eveniet esse. Eum quod recusandae ea fugiat
+                        nesciunt, error illum laboriosam earum amet, optio laudantium, perferendis fugit nulla nisi
+                        eos maiores? Aperiam unde asperiores mollitia sed sapiente saepe porro accusantium impedit
+                        veritatis assumenda.
 
-        <!-- ... main start .... -->
-        <main>
-            <div class="service-section bg-light mt-4">
-                <div class="title text-center mb-3">
-                    <h3 class="fw-bolder">Services
+                        <a href="#demo" data-bs-toggle="collapse">Learn more</a>
 
-                    </h3>
-                </div>
-                <div class="row text-start text-md-center">
-                    <div class="col-lg-3 col-md-6">
-                        <i class=" bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
-                        <h5 class="text-uppercase">Web Desinging</h5>
-                        <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
-                            numquam?
-                            Consequatur cum
-                            beatae officia eius vel, labore saepe quos!</p>
+                    <div id="demo" class="collapse">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla nihil a minus quam
+                            ut.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
-                        <h5 class="text-uppercase">Graphices Desinging</h5>
-                        <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
-                            numquam? Consequatur cum
-                            beatae officia eius vel, labore saepe quos!</p>
+
+                    </p>
+
+                    <div class="btn-group">
+                        <button class="btn btn-outline-primary mb-3 ">CV Download</button>
+                        <button class="btn btn-outline-primary mb-3 ">CV Download</button>
+                        <a class="btn btn-outline-primary mb-3" href="#">Visit my channel</a>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
-                        <h5 class="text-uppercase"> Digital Marketing</h5>
-                        <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
-                            numquam?
-                            Consequatur cum
-                            beatae officia eius vel, labore saepe quos!</p>
+
+                    <div class="alert alert-primary alert-dismissible" role="alert">
+                        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                        Learn Bootstrap 5
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fa-solid fa-handshake-angle"></i>
-                        <h5 class="text-uppercase"> Expert of Seo</h5>
-                        <p class="small text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, totam
-                            numquam?
-                            Consequatur cum
-                            beatae officia eius vel, labore saepe quos!</p>
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                        Learn Bootstrap 5
                     </div>
                 </div>
             </div>
-            <!-- ...About me start............ -->
-            <section class="mt-3">
-                <div>
-                    <h1 class=" title text-center fw-bolder mb-3">About Me</h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img class="rounded-circle img-fluid img-thumbnail m-auto" src="image/Rakesh1.jpg"
-                            alt="My Profile" style="width: 250px;">
-                    </div>
-                    <div class="col-lg-8">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima voluptatem esse deserunt!
-                            Quia, explicabo atque voluptatem dolore corrupti eveniet esse. Eum quod recusandae ea fugiat
-                            nesciunt, error illum laboriosam earum amet, optio laudantium, perferendis fugit nulla nisi
-                            eos maiores? Aperiam unde asperiores mollitia sed sapiente saepe porro accusantium impedit
-                            veritatis assumenda.
+        </section>
+        <!-- ......About me section ends...-->
 
-                            <a href="#demo" data-bs-toggle="collapse">Learn more</a>
 
-                        <div id="demo" class="collapse">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla nihil a minus quam
-                                ut.</p>
-                        </div>
-
-                        </p>
-
-                        <div class="btn-group">
-                            <button class="btn btn-outline-primary mb-3 ">CV Download</button>
-                            <button class="btn btn-outline-primary mb-3 ">CV Download</button>
-                            <a class="btn btn-outline-primary mb-3" href="#">Visit my channel</a>
-                        </div>
-
-                        <div class="alert alert-primary alert-dismissible" role="alert">
-                            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            </button>
-                            Learn Bootstrap 5
-                        </div>
-                        <div class="alert alert-danger alert-dismissible" role="alert">
-                            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            </button>
-                            Learn Bootstrap 5
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ......About me section ends...-->
-
-            <!-- Customer review section start -->
-            <section class="cutomer-review bg-light text-center">
-
-                <div class="title text-center mb-3 mt-3">
-                    <h3 class="fw-bolder">Customer Review</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <blockquote class="blockquote">
-                            <i class="p-2 fa-3x fas fa-user-circle"></i>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic laboriosam, quod ratione
-                                quaerat quisquam tenetur dolore suscipit eligendi quia, molestiae explicabo consequuntur
-                                dignissimos aspernatur aliquam, labore debitis unde eaque non! Maxime ad, mollitia
-                                placeat quod dolores laborum iste qui commodi?.</p>
-                            <footer class="blockquote-footer">
-                                Rakesh Barman in <cite>Youtube</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-lg-4">
-                        <blockquote class="blockquote">
-                            <i class="p-2 fa-3x fas fa-user-circle"></i>
-                            <p>Technology is a broad concept that deals with a species' usage and knowledge of tools and
-                                crafts, and how it affects a species' ability to control and adapt to its environment.
-                                In human society, it is a consequence of science and engineering, although several
-                                technological advances predate the two concepts. A strict definition of "technology" is
-                                elusive: </p>
-                            <footer class="blockquote-footer">
-                                Rakesh Barman in <cite>Youtube</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-lg-4">
-                        <blockquote class="blockquote">
-                            <i class="p-2 fa-3x fas fa-user-circle"></i>
-                            <p>It can refer to material objects of use to humanity, such as machines, hardware or
-                                utensils, but can also encompass broader themes, including systems, methods of
-                                organization, and techniques. The term can either be applied generally or to specific
-                                areas: examples include "construction technology," "medical technology," or
-                                "state-of-the-art technology.</p>
-                            <footer class="blockquote-footer">
-                                Rakesh Barman in <cite>Youtube</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Customer review section ends -->
-            <!-- student list section start -->
-            <div class="student-list">
-                <ul class="list-group">
-                    <li class="list-group-item bg-primary text-white">Rakesh Barman</li>
-                    <li class="active list-group-item bg-warning text-white">Nusrat jahan</li>
-                    <li class="list-group-item text-white bg-secondary">Rimi debnath</li>
-                    <a href="#" class="list-group-item bg-success list-group-item-action text-white">Rahim</a>
-                </ul>
+        <!-- Tutorials section starts here -->
+        <div class="tutorial-section">
+            <div class="title text-center mb-3 mt-3">
+                <h3 class="fw-bolder"> Tutorial</h3>
             </div>
-            <!-- student list section ends -->
-        </main>
-        <!-- ... main ends .... -->
-        <footer class="bg-danger p-3 justify-content-center">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="image/html-learn.png">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                                voluptatum?</p>
+                            <a class="btn stretched-link" href="https://anisulislam.netlify.app/" target="_blank">Visit
+                                this play list</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="image/github-learn.png">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                                voluptatum?</p>
+                            <a class="btn stretched-link" href="https://anisulislam.netlify.app/" target="_blank">Visit
+                                this play list</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="image/html-learn.png">
+                        <div class="card-body">
+                            <h4 class="card-title">HSC ICT</h4>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                                voluptatum?</p>
+                            <a class="btn stretched-link" href="https://anisulislam.netlify.app/" target="_blank">Visit
+                                this play list</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tutorials section ends here -->
+        <!-- Customer review section start -->
+        <section class="cutomer-review bg-light text-center">
+
+            <div class="title text-center mb-3 mt-3">
+                <h3 class="fw-bolder">Customer Review</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <blockquote class="blockquote">
+                        <i class="p-2 fa-3x fas fa-user-circle"></i>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic laboriosam, quod ratione
+                            quaerat quisquam tenetur dolore suscipit eligendi quia, molestiae explicabo consequuntur
+                            dignissimos aspernatur aliquam, labore debitis unde eaque non! Maxime ad, mollitia
+                            placeat quod dolores laborum iste qui commodi?.</p>
+                        <footer class="blockquote-footer">
+                            Rakesh Barman in <cite>Youtube</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-4">
+                    <blockquote class="blockquote">
+                        <i class="p-2 fa-3x fas fa-user-circle"></i>
+                        <p>Technology is a broad concept that deals with a species' usage and knowledge of tools and
+                            crafts, and how it affects a species' ability to control and adapt to its environment.
+                            In human society, it is a consequence of science and engineering, although several
+                            technological advances predate the two concepts. A strict definition of "technology" is
+                            elusive: </p>
+                        <footer class="blockquote-footer">
+                            Rakesh Barman in <cite>Youtube</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-4">
+                    <blockquote class="blockquote">
+                        <i class="p-2 fa-3x fas fa-user-circle"></i>
+                        <p>It can refer to material objects of use to humanity, such as machines, hardware or
+                            utensils, but can also encompass broader themes, including systems, methods of
+                            organization, and techniques. The term can either be applied generally or to specific
+                            areas: examples include "construction technology," "medical technology," or
+                            "state-of-the-art technology.</p>
+                        <footer class="blockquote-footer">
+                            Rakesh Barman in <cite>Youtube</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer review section ends -->
+
+        <!-- toggleable dynamic tab starts here -->
+        <div class="other-section">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a data-toggle="pill" class="nav-link active" href="#edu">Education</a></li>
+                <li class="nav-item"><a data-toggle="pill" class="nav-link" href="#skill">Skill</a></li>
+                <li class="nav-item"><a data-toggle="pill" class="nav-link" href="#hobby">Hobby</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="edu" class="tab-pane active">
+                    <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas deserunt nam
+                        reprehenderit rerum magni quos quod laudantium ducimus harum?</p>
+                </div>
+                <div id="skill" class="tab-pane fade">
+                    <p>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas deserunt nam
+                        reprehenderit rerum magni quos quod laudantium ducimus harum?</p>
+                </div>
+                <div id="hobby" class="tab-pane fade">
+                    <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas deserunt nam
+                        reprehenderit rerum magni quos quod laudantium ducimus harum?</p>
+                </div>
+            </div>
+        </div>
+        <!-- toggleable dynamic tab ends here -->
+
+
+        <!-- .....media object ..Starts...... -->
+        <section class="border my-3 border-secondary">
+            <div class="title text-center mb-3 mt-3">
+                <h3 class="fw-bolder"> My Blogs</h3>
+            </div>
+            <div class="media d-flex justify-content-around">
+                <img class="mr-3 rounded-circle p-2" src="image/Rakesh1.jpg" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0"> I love programming</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus
+                    odio, vestibulum in vulputate at, tempus viverra turpis.
+                </div>
+            </div>
+        </section>
+        <!-- .....media object .Ends....... -->
+        <!-- student list section start -->
+        <div class="student-list">
+            <ul class="list-group">
+                <li class="list-group-item bg-primary text-white">Rakesh Barman</li>
+                <li class="active list-group-item bg-warning text-white">Nusrat jahan</li>
+                <li class="list-group-item text-white bg-secondary">Rimi debnath</li>
+                <a href="#" class="list-group-item bg-success list-group-item-action text-white">Rahim</a>
+            </ul>
+        </div>
+        <!-- student list section ends -->
+    </main>
+    <!-- ... main ends .... -->
+    <footer class="bg-danger p-3 justify-content-center">
+        <ul class="pagination">
             <ul class="pagination">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-        </footer>
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+    </footer>
 
     </div>
 
 
-    <!-- ..........script.........
+    <!-- ..........script......... -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script> 
-    ..............................-->
+        crossorigin="anonymous"></script>
+
 
 </body>
 
